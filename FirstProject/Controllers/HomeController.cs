@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using FirstProject.Models;
+using FirstProject.Models.ViewModels;
 
 namespace FirstProject.Controllers
 {
