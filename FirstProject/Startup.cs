@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FirstProject.Models;
 using FirstProject.Data;
+using FirstProject.Services;
 
 namespace FirstProject
 {
@@ -43,6 +44,7 @@ namespace FirstProject
                     options.UseSqlServer(Configuration.GetConnectionString("FirstProject")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
